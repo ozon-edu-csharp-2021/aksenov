@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F64EEA8E-8391-45D0-B9AA-888CC92B9534}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{7443C2C7-C8B7-4779-8F86-76BD4E0EF5FE}"
+ProjectSection(SolutionItems) = preProject
+	.editorconfig = .editorconfig
+	.gitignore = .gitignore
+	Dockerfile = Dockerfile
+	readme.md = readme.md
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D30A1F13-EE5B-4EA9-84EA-B6AF2EB61283}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "merchandise-service", "src\merchandise-service\merchandise-service.csproj", "{EE741F3C-9EB1-47E7-A69F-6539DFC38F69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EE741F3C-9EB1-47E7-A69F-6539DFC38F69} = {F64EEA8E-8391-45D0-B9AA-888CC92B9534}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE741F3C-9EB1-47E7-A69F-6539DFC38F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE741F3C-9EB1-47E7-A69F-6539DFC38F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE741F3C-9EB1-47E7-A69F-6539DFC38F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE741F3C-9EB1-47E7-A69F-6539DFC38F69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
