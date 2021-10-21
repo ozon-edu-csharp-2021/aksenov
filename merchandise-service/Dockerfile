@@ -1,17 +1,17 @@
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 
 WORKDIR /src
-COPY ["src/merchandise-service/merchandise-service.csproj", "src/merchandise-service/"]
-RUN dotnet restore "src/merchandise-service/merchandise-service.csproj"
+COPY ["src/merchandiseService/merchandiseService.csproj", "src/merchandiseService/"]
+RUN dotnet restore "src/merchandiseService/merchandiseService.csproj"
 
 COPY . .
 
-WORKDIR "/src/src/merchandise-service"
+WORKDIR "/src/src/merchandiseService"
 
-RUN dotnet build "merchandise-service.csproj" -c Release -o /app/build
+RUN dotnet build "merchandiseService.csproj" -c Release -o /app/build
 
 FROM build as publish
-RUN dotnet publish "merchandise-service.csproj" -c Release -o /app/publish
+RUN dotnet publish "merchandiseService.csproj" -c Release -o /app/publish
 
 FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS runtime
 
@@ -25,4 +25,4 @@ WORKDIR /app
 
 COPY --from=publish /app/publish .
 
-ENTRYPOINT ["dotnet", "merchandise-service.dll"]
+ENTRYPOINT ["dotnet", "merchandiseService.dll"]

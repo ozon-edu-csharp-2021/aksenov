@@ -12,7 +12,7 @@ EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D30A1F13-EE5B-4EA9-84EA-B6AF2EB61283}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "merchandise-service", "src\merchandise-service\merchandise-service.csproj", "{EE741F3C-9EB1-47E7-A69F-6539DFC38F69}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "merchandiseService", "src\merchandiseService\merchandiseService.csproj", "{EE741F3C-9EB1-47E7-A69F-6539DFC38F69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
