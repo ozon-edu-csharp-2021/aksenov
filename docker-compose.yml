@@ -4,7 +4,7 @@ services:
   merchandise-service:
     build: "merchandise-service/"
     hostname: merchandise-service
-    image: "merchandise-service"
+    image: "merchandise-service:local"
     ports:
       - "8080:80"
     depends_on:
